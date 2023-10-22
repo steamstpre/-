@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1019330911779",
+    "project_id": "eiva-ffb44",
+    "storage_bucket": "eiva-ffb44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019330911779:android:95a9c315e8db129e431b96",
+        "android_client_info": {
+          "package_name": "com.example.eiva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdrS9hIMwCsMtn6fxdiPbb6IFqWdMrX-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
