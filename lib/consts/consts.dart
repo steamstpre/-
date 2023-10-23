@@ -1,8 +1,6 @@
 class AppConsts {
   AppConsts._();
-  static const pathToMainScreen = '/main_screen';
   static const pathToLoginScreen = '/login_screen';
-  static const pathToAccountScreen = '/account_screen';
   static const pathToIntroScreen = '/';
   static const pathToRegisterScreen = 'register_screen';
 

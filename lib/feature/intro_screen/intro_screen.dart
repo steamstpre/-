@@ -1,7 +1,7 @@
 import 'package:eiva/consts/consts.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lottie/lottie.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({super.key});
@@ -26,20 +26,9 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // SvgPicture.asset(AppConsts.pathToLogo),
-              // Text(
-              //   AppLocalizations.of(context)!.nameOfApp,
-              //   style: Theme.of(context).textTheme.bodyLarge,
-              // )
-            ],
-          ),
-        ),
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height,
+        child: Lottie.asset('assets/lottie/animation1.json'),
       ),
     );
   }

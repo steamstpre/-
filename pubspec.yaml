@@ -29,8 +29,10 @@ dependencies:
   google_fonts: ^6.1.0
   font_awesome_flutter: ^10.5.0
   shared_preferences: ^2.2.2
+  lottie: ^2.7.0
   intl: any
   flutter_localization: ^0.1.14
+  phone_form_field: ^8.1.0
   flutter_localizations:
     sdk: flutter
 
@@ -43,3 +45,15 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+
+  assets:
+    - assets/lottie/
+    - assets/imgs/
+    
+
+  fonts:
+    - family: Gilory
+      fonts:
+        - asset: assets/font/Gilroy/Gilroy-Black.ttf
+        - asset: assets/font/Gilroy/Gilroy-Bold.ttf
+   

@@ -1,5 +1,6 @@
 import 'dart:async';
-
+import 'package:eiva/domain/thems/themes.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:eiva/domain/navigation/naviagtion.dart';
 import 'package:eiva/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -29,6 +30,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       localizationsDelegates: const [
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -37,6 +39,8 @@ class MainApp extends StatelessWidget {
         Locale('en'),
       ],
       routerConfig: NavigationService.router,
+      theme: Themes().lightTheme,
+      darkTheme: Themes().darkTheme,
     );
   }
 }
